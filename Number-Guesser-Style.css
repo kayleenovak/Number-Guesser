@@ -1,0 +1,145 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Header*/
+.header {
+  width: 100%;
+  background-color: #404041;
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  color: #ed458b;
+  display: inline;
+  font-weight: 700;
+}
+
+/*Section to set the range of numbers*/
+section {
+  text-align: center;
+}
+
+.set-range {
+  height: 120px;
+}
+
+.min-max {
+  display: inline-block;
+}
+
+/*Button is applied to most buttons on the page*/
+button {
+  height: 45px;
+  width: 210px;
+  margin: 15px;
+  background-color: #d0d2d3;
+  border-top-left-radius: 23px 23px;
+  border-bottom-left-radius: 23px 23px;
+  border-top-right-radius: 23px 23px;
+  border-bottom-right-radius: 23px 23px;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+button:disabled {
+  background-color: #D0D2D3;
+  color: #FFFFFF;
+}
+
+button:hover:enabled {
+  background-color: #eb008b;
+}
+
+.range-button {
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+}
+
+.min-change {
+  height: 20px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.max-change {
+  height: 20px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+/*Section where user inputs a guess*/
+.input-sec {
+  height: 150px;
+}
+
+.number-input {
+  display: block;
+  position: relative;
+  left: 50%;
+  margin: 40px auto auto 20px;
+  margin-left: -190px;
+  font-size: 40px;
+  font-weight: 300;
+  color: #d0d2d3;
+  border: 2px solid #d0d2d3;
+}
+
+span {
+  font-size: 60px;
+  color: #e6e7e8;
+  font-weight: 300;
+}
+
+.last-guess {
+  height: 30px;
+}
+
+.last-guess-class {
+  font-weight: 300;
+  font-size: 25px;
+  color: #000000;
+}
+
+.num-section {
+  height: 200px;
+}
+
+.number-guess {
+  font-size: 170px;
+  color: #eb008b;
+}
+
+.high-low {
+  font-size: 25px;
+  color: black;
+}
+
+/*Reset field*/
+.reset {
+  height: 30px;
+  width: 450px;
+  background-color: #d0d2d3;
+  border-top-left-radius: 15px 15px;
+  border-bottom-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.reset:disabled {
+  background-color: #D0D2D3;
+  color: #FFFFFF;
+}
+
+.reset:hover:enabled {
+  background-color: #eb008b;
+}
