@@ -4,7 +4,7 @@ var guessed = document.querySelector('.number-guess');
 var highOrLow = document.querySelector('.high-low');
 var clearButton = document.querySelector('.clear');
 var resetButton = document.querySelector('.reset');
-var lastGuess = document.querySelector('.last-guess');
+var lastguess = document.querySelector('.last-guess');
 var minChange = document.querySelector('.min-change');
 var maxChange = document.querySelector('.max-change');
 var minNum = document.getElementById('minimum');
@@ -21,13 +21,14 @@ function errorMessage () {
   var min = parseInt(minNum.value);
   var max = parseInt(maxNum.value);
   if (numerical < min || numerical > max ) {
-      lastGuess.innerText = `Please choose a number between ${min} and ${max}`;
-      lastGuess.style.color = "#eb008b";
+      lastguess.innerText = `Please choose a number between ${min} and ${max}`;
+      lastguess.style.color = "#eb008b";
       guessed.innerText = '';
+      highlow.innerText = '';
   } else {
-      lastGuess.innerText = 'Your Last Guess Was';
-      lastGuess.classList.add('last-guess-class');
-      lastGuess.style.color = '#000000';
+      lastguess.innerText = 'Your Last Guess Was';
+      lastguess.classList.add('last-guess-class');
+      lastguess.style.color = '#000000'
   }
 }  
 
@@ -48,20 +49,18 @@ guessButton.addEventListener('click', function () {
   var numerical = parseInt(numberInput.value);
   var min = parseInt(minNum.value);
   var max = parseInt(maxNum.value); 
-  guessed.innerText = numberVal;
+  guessed.innerHTML = numberVal;
   
   errorMessage();
 
   resetButton.disabled = false;
 
   if (numberVal == randomNumber) {
-    highOrLow.innerText = 'BOOM!';
+    highOrLow.innerHTML = 'BOOM!';
   } else if (numberVal < randomNumber) {
-    highOrLow.innerText = 'That is too low!';
-  } else if (numberVal > max || numberVal < min) {
-    highOrLow.innerText = '';
-  } else {
-    highOrLow.innerText = 'That is too high!';
+    highOrLow.innerHTML = 'That is too low!';
+  }  else {
+    highOrLow.innerHTML = 'That is too high!';
   }
 
   if(randomNumber == numberVal) {
@@ -95,7 +94,6 @@ resetButton.addEventListener('click', function () {
   highOrLow.innerText = 'Game has been reset!';
   minChange.innerText = '';
   maxChange.innerText = '';
-  lastGuess.innerText = '';
   resetButton.disabled = true;
   guessButton.disabled = true;
   clearButton.disabled = true;
