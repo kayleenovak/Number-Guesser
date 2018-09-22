@@ -2,9 +2,7 @@
 
 <html>
 <head>
-  <title>
-    Number Guesser
-  </title>
+  <title>Number Guesser</title>
    <link href="Number-Guesser-Style.css" type="text/css" rel="stylesheet" />
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
 </head>
@@ -13,8 +11,8 @@
   <header class="header">
     <h1>Number <span>Guesser</span></h1>
   </header>
-
-  <section class="set-range"><p>Set Your Minimum and Maximum Range</p>
+  <section class="set-range">
+    <p>Set Your Minimum and Maximum Range</p>
     <input type="number" placeholder="Minimum" class="min-max" id="minimum">
     <input type="number" placeholder="Maximum" class="min-max" id="maximum">
     <button class="range-button">Accept Your Range</button>
@@ -26,17 +24,14 @@
     <button class="guess" disabled>Guess</button>
     <button class="clear" disabled>Clear</button>
   </section>
-
   <section class="last-guess">
     <h3 class="last-guess-class">Your Last Guess Was</h3>
   </section>
-
   <section class="num-section"><span class="number-guess"></span></section>
-  <section><span class="high-low"></span></section>
-
+  <section><p class="high-low"></p></section>
   <section>
     <input type="submit" value="Reset" class="reset" disabled>
   </section>
-  <script src="Number-Guesser-Js.js"></script>
 </body>
+  <script src="Number-Guesser-Js.js"></script>
 </html>

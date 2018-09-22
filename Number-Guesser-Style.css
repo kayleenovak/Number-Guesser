@@ -4,12 +4,13 @@ body {
 
 /*Header*/
 .header {
-  width: 100%;
   background-color: #404041;
-  text-align: center;
+  box-sizing: border-box;
   height: 100px;
   padding: 10px;
-  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+
 }
 
 h1 {
@@ -34,17 +35,14 @@ section {
 
 /*Button is applied to most buttons on the page*/
 button {
-  height: 45px;
-  width: 210px;
-  margin: 15px;
   background-color: #d0d2d3;
-  border-top-left-radius: 23px 23px;
-  border-bottom-left-radius: 23px 23px;
-  border-top-right-radius: 23px 23px;
-  border-bottom-right-radius: 23px 23px;
-  font-size: 25px;
+  border-radius: 23px 23px;
   color: #ffffff;
+  font-size: 25px;
   font-weight: 300;
+  height: 45px;
+  margin: 15px;
+  width: 210px;
 }
 
 button:disabled {
@@ -57,20 +55,20 @@ button:hover:enabled {
 }
 
 .range-button {
+  font-size: 15px;
   height: 30px;
   width: 200px;
-  font-size: 15px;
 }
 
 .min-change {
-  height: 20px;
   font-size: 15px;
+  height: 20px;
   margin: 4px;
 }
 
 .max-change {
-  height: 20px;
   font-size: 15px;
+  height: 20px;
   margin: 4px;
 }
 
@@ -80,21 +78,21 @@ button:hover:enabled {
 }
 
 .number-input {
+  border: 2px solid #d0d2d3;
+  color: #d0d2d3;
   display: block;
-  position: relative;
+  font-size: 40px;
+  font-weight: 300;
   left: 50%;
   margin: 40px auto auto 20px;
   margin-left: -190px;
-  font-size: 40px;
-  font-weight: 300;
-  color: #d0d2d3;
-  border: 2px solid #d0d2d3;
+  position: relative;
 }
 
 span {
   font-size: 60px;
-  color: #e6e7e8;
   font-weight: 300;
+  color: #e6e7e8;
 }
 
 .last-guess {
@@ -102,9 +100,9 @@ span {
 }
 
 .last-guess-class {
+  color: #000000;
   font-weight: 300;
   font-size: 25px;
-  color: #000000;
 }
 
 .num-section {
@@ -112,27 +110,24 @@ span {
 }
 
 .number-guess {
-  font-size: 170px;
   color: #eb008b;
+  font-size: 170px;
 }
 
 .high-low {
-  font-size: 25px;
   color: black;
+  font-size: 25px;
 }
 
 /*Reset field*/
 .reset {
+  background-color: #d0d2d3;
+  border-radius: 15px 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
   height: 30px;
   width: 450px;
-  background-color: #d0d2d3;
-  border-top-left-radius: 15px 15px;
-  border-bottom-left-radius: 15px 15px;
-  border-top-right-radius: 15px 15px;
-  border-bottom-right-radius: 15px 15px;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 300;
 }
 
 .reset:disabled {
